@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container-id {
+    width: 350px;
+    height: 370px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    height: 140px;
+    width: 100%;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.victors-data {
+    height: 140px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 25px;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.victors-data h2 {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.victors-data h2>span {
+    font-size: 18px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.victors-data p {
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.victors-social-data {
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid hsl(0, 0%, 83%);
+}
+
+.victors-social-data div {
+    width: 20%;
+    text-align: center;
+}
+
+.victors-social-data div a {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.victors-social-data div p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.victor {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 100%;
+}
+
+.victor img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+    object-fit: contain;
+}
